@@ -1,0 +1,17 @@
+class Student:
+    print("Python read the Student blueprint.")
+    school = "sunrise school"
+    grade = 10
+    print("Class variale grade:", grade)
+
+anna = Student()
+ryan = Student()
+print("anna is a", type(anna))
+
+print("anna's school:", anna.school, "| ryan's grade", ryan.grade)
+new_grade = int(input("New class grade? "))
+Student.grade = new_grade
+print("After changing the class grade: anna", anna.grade, "| ryan", ryan.grade)
+
+anna.grade = 12
+print("anna", anna.grade, "| ryan", ryan.grade, "| Student", Student.grade)
